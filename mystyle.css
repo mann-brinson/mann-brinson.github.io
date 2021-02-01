@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #0356fc;
+}
+
+p, h2 {
+  color: black;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+/*TABLE FEATURES*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: 'Source Code Pro', monospace;
+}
+#t02 th {
+  color: white;
+  background-color: #0356fc;
+}
+
+/*Blue color*/
+/*#0356fc*/
