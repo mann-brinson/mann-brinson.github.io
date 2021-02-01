@@ -23,6 +23,7 @@ table, th, td {
 #t02 th {
   color: white;
   background-color: #0356fc;
+  text-align: left;
 }
 
 /*Blue color*/
