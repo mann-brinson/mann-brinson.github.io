@@ -1,0 +1,125 @@
+/*Page title*/
+h1 {
+  background-color: white;
+  color: #1000c2;
+  text-align: center;
+  resize: none;
+  height: 50px;
+  width: 800px;
+}
+
+/*Horizontal naviagational bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e0df77;
+  /*TODO: Prevent from resizing*/
+  /*resize: none;*/
+}
+
+/*Allow for elements to enumerate from left-to-right*/
+li {float: left;}
+
+/*All elements in horizontal nav bar*/
+li a {
+	display: block;
+	color: #1c36e6;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px 16px;
+	text-decoration: none;
+}
+
+/*First element of horizontal nav bar has a left indent*/
+.top {padding-left: 50px;}
+
+/*Changes color of element after being clicked*/
+a:visited {color: #801cba;}
+
+/*Background image on homepage*/
+.background_img {
+	/*padding-left: 100px;*/
+	/* The image used */
+	background-image: url("photos/restaurant.jpeg");\
+	resize: none;
+
+	/* Set a specific height of window */
+	min-height: 450px; 
+
+	/* Create the parallax scrolling effect */
+	background-position: 70px 150px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 600px 400px;
+
+	/*Add the central caption*/
+	/*margin-left: 100px;*/
+}
+
+.head_two {
+	height: 60px;
+	width: 800px;
+	background-color:white;
+	padding-top: 30px;
+
+	font-size:24px;
+	font-family: 'Comic Neue', cursive;
+	text-decoration-line:underline;
+	text-decoration-style: double;
+	text-align: center;
+	resize: none;
+	color: #801cba;
+}
+
+
+
+/*Testing - Implementation*/
+.container1 {
+	width:900px;
+	height:auto;
+	padding:20px;
+}
+
+/*Left-oriented images*/
+.img_div {
+	border: 10px solid #ffb3cf;
+	width: 400px;
+	height: 300px;
+	margin-left:2%;
+	float:left; 
+}
+.img_head {
+	font-weight: bold;
+	margin-top: 80px;
+	margin-left: 500px;
+	color: #1862d9;
+}
+.img_body {
+	margin-left: 500px;
+	margin-bottom: 200px;
+	margin-right: 90px;
+}
+
+/*Right-oriented images*/
+.img_div2 {
+	border: 10px solid #4bf2df;
+	width: 400px;
+	height: 300px;
+	margin-right:2%;
+	float:right; 
+}
+.img_head2 {
+	font-weight: bold;
+	margin-top: 80px;
+	margin-left: 50px;
+	color: #1862d9;
+}
+.img_body2 {
+	margin-left: 50px;
+	margin-bottom: 200px;
+	margin-right: 560px;
+}
+
+

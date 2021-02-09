@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<!-- Metadata about the page-->
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+		<title>Page Title</title>
+	</head>
+
+	<!-- Data about structuring the page itself -->
+	<body>
+		<h1>Trojan Café</h1>
+		<ul>
+		  <li class="top">
+		  	<a class="active" href="">Home</a></li>
+		  <li>
+		  	<a href="#italian" onclick="scroll(document.getElementById('italian'))">Italian</a></li>
+		  <li>
+		  	<a href="#indian" onclick="scroll(document.getElementById('indian'))">Indian</a></li>
+		  <li>
+		  	<a href="#japanese" onclick="scroll(document.getElementById('japanese'))">Japanese</a></li>
+		  <li>
+		  	<a href="#desserts" onclick="scroll(document.getElementById('desserts'))">Desserts</a></li>
+		  <li>
+		  	<a id="about" href="welcome.html">About</a></li>
+		  <li>
+		  	<a id="contact" href="welcome.html">Contact</a></li>
+		</ul>
+
+		<!-- Background image -->
+		<div class="background_img">Enjoy the scenic view!!</div>
+
+		<!-- Second header -->
+		<div class="head_two" >Explore Our Delicious Cuisines</div>
+
+		<!-- Image divs start here -->
+		<!-- Italian -->
+		<div class='container1' id="italian">
+			<div>
+				<img class="img_div" src="photos/italiancuisine.jpg" alt="italian">
+			</div>
+			<div>
+				<div class="img_head" >Italy's finest:</div>
+				<div class="img_body">From our Lasagna to our Protein Penne, we have delicious options for every taste!</div>
+			</div>
+		</div>
+
+		<!-- Indian -->
+		<div class='container1' id="indian">
+			<div>
+				<img class="img_div2" src="photos/indiancuisine.jpg" alt="indian">
+			</div>
+			<div>
+				<div class="img_head2" >India's Flavors:</div>
+				<div class="img_body2">Our dishes are blended with masterful savory spices</div>
+			</div>
+		</div>
+
+		<!-- Japanese -->
+		<div class='container1' id="japanese">
+			<div>
+				<img class="img_div" src="photos/japanesecuisine.jpg" alt="japanese">
+			</div>
+			<div>
+				<div class="img_head" >Japanese Cuisine:</div>
+				<div class="img_body">Delicious dining options from Sake to Sushi</div>
+			</div>
+		</div>
+
+		<!-- Desserts -->
+		<div class='container1' id="desserts">
+			<div>
+				<img class="img_div2" src="photos/dessertcuisine.jpg" alt="desserts">
+			</div>
+			<div>
+				<div class="img_head2" >Desserts:</div>
+				<div class="img_body2">From Italian Tiramisu to Indian Gulab Jamun</div>
+			</div>
+		</div>
+
+	<!-- Javascripts down here -->
+	<script type="text/javascript">
+
+		window.scroll = function(target) {
+			// Scroll function, takes a section header as input, and
+			// then scrolls to the desired section
+		    var scrollContainer = target;
+		    do { //find scroll container
+		        scrollContainer = scrollContainer.parentNode;
+		        if (!scrollContainer) return;
+		        scrollContainer.scrollTop += 1;
+		    } while (scrollContainer.scrollTop == 0);
+		    
+		    var targetY = 0;
+		    do { //find the top of target wrt container
+		        if (target == scrollContainer) break;
+		        targetY += target.offsetTop;
+		    } while (target = target.offsetParent);
+		    
+		    // begin scrolling
+		    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+		}
+	</script>
+
+
+	</body>
+</html>
