@@ -29,7 +29,10 @@
 		</ul>
 
 		<!-- Background image -->
-		<div class="background_img">Enjoy the scenic view!!</div>
+		<div class="background_img2">
+			<h2>Enjoy the scenic view!!</h2>
+			<p>Book your reservation</p>
+		</div>
 
 		<!-- Second header -->
 		<div class="head_two" >Explore Our Delicious Cuisines</div>
@@ -82,27 +85,26 @@
 	<!-- Javascripts down here -->
 	<script type="text/javascript">
 
-		window.scroll = function(target) {
+		window.scroll = function(section_head) {
 			// Scroll function, takes a section header as input, and
 			// then scrolls to the desired section
-		    var scrollContainer = target;
+		    var scrollContainer = section_head;
 		    do { //find scroll container
 		        scrollContainer = scrollContainer.parentNode;
 		        if (!scrollContainer) return;
 		        scrollContainer.scrollTop += 1;
 		    } while (scrollContainer.scrollTop == 0);
 		    
-		    var targetY = 0;
-		    do { //find the top of target wrt container
-		        if (target == scrollContainer) break;
-		        targetY += target.offsetTop;
-		    } while (target = target.offsetParent);
+		    var section_headY = 0;
+		    do { //find the top of section_head wrt container
+		        if (section_head == scrollContainer) break;
+		        section_headY += section_head.offsetTop;
+		    } while (section_head = section_head.offsetParent);
 		    
 		    // begin scrolling
-		    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+		    scroll(scrollContainer, scrollContainer.scrollTop, section_headY, 0);
 		}
 	</script>
-
 
 	</body>
 </html>

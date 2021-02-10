@@ -4,13 +4,14 @@ h1 {
   color: #1000c2;
   text-align: center;
   resize: none;
-  height: 50px;
+  height: 30px;
   width: 800px;
 }
 
 /*Horizontal naviagational bar*/
 ul {
   list-style-type: none;
+  height: 40px;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -39,25 +40,45 @@ li a {
 a:visited {color: #801cba;}
 
 /*Background image on homepage*/
-.background_img {
-	/*padding-left: 100px;*/
-	/* The image used */
-	background-image: url("photos/restaurant.jpeg");\
+.background_img2 {
+	background-image: url("photos/restaurant.jpeg");
 	resize: none;
 
 	/* Set a specific height of window */
 	min-height: 450px; 
 
 	/* Create the parallax scrolling effect */
-	background-position: 70px 150px;
+	background-position: 70px 50px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: 600px 400px;
-
-	/*Add the central caption*/
-	/*margin-left: 100px;*/
+	background-size: 915px 515px;
 }
 
+/*"Enjoy the scenic view"*/
+.background_img2 > h2 {
+	color: #fce79a;
+	/*margin: 10px;*/
+	padding-top: 140px;
+	padding-left: 290px;
+	font-size: 50px;
+	white-space: nowrap;
+}
+
+/*"Book your reservation"*/
+.background_img2 > p {
+	color: black;
+	background-color: #e8e6e6;
+	width: 190px;
+	padding: 10px;
+	margin-left: 600px;
+	/*margin-right: 300px;*/
+	font-size: 20px;
+	border-color: black;
+	border-style: double;
+	white-space: nowrap;
+}
+
+/*Second header*/
 .head_two {
 	height: 60px;
 	width: 800px;
@@ -73,9 +94,7 @@ a:visited {color: #801cba;}
 	color: #801cba;
 }
 
-
-
-/*Testing - Implementation*/
+/*Container to hold image and text side-by-side*/
 .container1 {
 	width:900px;
 	height:auto;
@@ -121,5 +140,4 @@ a:visited {color: #801cba;}
 	margin-bottom: 200px;
 	margin-right: 560px;
 }
-
 
