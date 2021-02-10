@@ -5,7 +5,7 @@ h1 {
   text-align: center;
   resize: none;
   height: 30px;
-  width: 800px;
+  width: 950px;
 }
 
 /*Horizontal naviagational bar*/
@@ -81,7 +81,7 @@ a:visited {color: #801cba;}
 /*Second header*/
 .head_two {
 	height: 60px;
-	width: 800px;
+	width: 950px;
 	background-color:white;
 	padding-top: 30px;
 
