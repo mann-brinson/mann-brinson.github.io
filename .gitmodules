@@ -1,3 +1,6 @@
 [submodule "hw5"]
 	path = hw5
 	url = https://github.com/mann-brinson/python-docs-hello-world.git
+[submodule "python-docs-hello-world"]
+	path = python-docs-hello-world
+	url = https://github.com/mann-brinson/python-docs-hello-world.git
