@@ -19,6 +19,7 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
 }
 #t02 th {
   color: white;
